@@ -1,16 +1,20 @@
 .layout-basic header{
     display: flex;
-    justify-content: space-between;
     padding: 0 1rem;
     height: $header-height;
     border-bottom: 1px solid $color-border-light;
-    .logo {
-        margin: auto 0;
-        width: 70px;
+    .logo-wrapper {
+        margin: auto 0px;
+        flex: 0 0 30%;
+        .logo {
+            width: 70px;
+        }
     }
     nav {
+        flex: 0 0 40%;
         ul {
             display: flex;
+            justify-content: center;
             height: 100%;
             a{
                 &.active{
@@ -33,6 +37,12 @@
                 }
             }
         }
+    }
+    .third-col{
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
 }
 

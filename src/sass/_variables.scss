@@ -7,11 +7,14 @@ $footer-height: 1.2rem;
 /**
 * Color
 */
-$color-text-primary: rgb(15, 0, 180);
+$color-primary: rgb(15, 0, 180);
+$color-text-primary: $color-primary;
 $color-text-light: rgb(75, 75, 75);
 $color-text-heading: rgb(0, 0, 0);
 $color-text-body: rgb(40, 40, 40);
+$color-text-white: rgb(255, 255, 255);
 
 $color-background-default:rgb(240, 240, 240);
+$color-background-primary:$color-primary;
 
 $color-border-light: rgb(230, 230, 230);

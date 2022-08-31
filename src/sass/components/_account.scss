@@ -1,0 +1,22 @@
+.account-wrapper{
+    width: 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        background-color: $color-background-primary;
+        border-radius: 50%;
+        &:hover{
+            cursor: pointer;
+        }
+        .label{
+            color: $color-text-white;            
+        }
+    }
+}
