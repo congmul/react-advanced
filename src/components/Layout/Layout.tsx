@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 
 function Layout():JSX.Element {
     return(
-        <div className="layout-basic">
+        <div className="layout-side"> {/* choose "layout-basic" or "layout-side" */}
             <Header />
             <main><Outlet /></main>
             <Footer>© 2022 - JEHYUN JUNG</Footer>

@@ -7,3 +7,18 @@
         padding: 1rem;
     }
 }
+.layout-side {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    main{
+        overflow-y: auto;
+        height: calc(100vh - $footer-height);
+        width: calc(100vw - 4rem);
+        background-color: $color-background-default;
+        padding: 1rem;
+    }
+    footer{
+        width: 100%;
+    }
+}
