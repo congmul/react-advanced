@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      TEST
-    </div>
-  );
+function App():JSX.Element {
+  return (<>
+  </>);
 }
 
 export default App;
