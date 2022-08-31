@@ -12,6 +12,12 @@
             display: flex;
             height: 100%;
             a{
+                &.active{
+                    color: $color-text-primary;
+                    svg{
+                        fill: $color-text-primary;
+                    }
+                }
                 li {
                     display: flex;
                     align-items: center;

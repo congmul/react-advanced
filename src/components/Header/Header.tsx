@@ -1,38 +1,26 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { navMenu } from './navMenu.data';
 
-interface PropsType{
-    children?: React.ReactNode;
-    logo?: React.ReactNode | string;
-}
-
-function Header({children, logo}:PropsType):JSX.Element {
+function Header():JSX.Element {
+    const [ selectedNav, setSelectedNav ] = useState(() => navMenu[0].name || '');
+    function onClickNavMenu(event: any) {
+        setSelectedNav(event.currentTarget.dataset.menu)
+    }
     return(
         <header>
             <Link to="/" className="logo">
-                {logo || "Logo"}
+                Logo
             </Link>
             <nav>
                 <ul>
-                    <Link to="/">
-                        <li>
-                            Link 1
-                        </li>
-                    </Link>
-                    <Link to="#2">
-                        <li>
-                            Link 2
-                        </li>
-                    </Link>
-                    <Link to="#3">
-                        <li>
-                            Link 3
-                        </li>
-                    </Link>
-                    <Link to="#4">
-                        <li>
-                            Link 4
-                        </li>
-                    </Link>
+                    {navMenu.map((menu, index) => 
+                        <Link key={`${menu.name}-${index}`} to="/" className={selectedNav === menu.name ? "active": ''} data-menu={menu.name} onClick={onClickNavMenu}>
+                            <li>
+                                {menu.icon != null ? menu.icon() : menu.name}
+                            </li>
+                        </Link>
+                    )}
                 </ul>
             </nav>
         </header>
