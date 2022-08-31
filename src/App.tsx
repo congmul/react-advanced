@@ -1,9 +1,6 @@
-import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
 import Layout from './components/Layout/Layout';
-
-import './App.scss';
 
 function App():JSX.Element {
   return (
