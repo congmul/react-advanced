@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navMenu } from './navMenu.data';
+import logoKangjung from '../../assets/img/logo_kangjung.png';
 
 function Header():JSX.Element {
     const [ selectedNav, setSelectedNav ] = useState(() => navMenu[0].name || '');
@@ -10,7 +11,7 @@ function Header():JSX.Element {
     return(
         <header>
             <Link to="/" className="logo" data-menu={navMenu[0].name} onClick={onClickNavMenu}>
-                Logo
+                <img src={logoKangjung} alt="logo" />
             </Link>
             <nav>
                 <ul>

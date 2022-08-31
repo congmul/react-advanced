@@ -6,6 +6,7 @@
     border-bottom: 1px solid $color-border-light;
     .logo {
         margin: auto 0;
+        width: 70px;
     }
     nav {
         ul {
@@ -43,8 +44,8 @@
     height: calc(100vh - $footer-height);
     border-right: 1px solid $color-border-light;
     .logo {
-        height: 4rem;
-        padding: 0.5rem 0;
+        padding: 0.7rem 0.35rem;
+        border-bottom:1px solid $color-border-light;
     }
     nav {
         width: 100%;
