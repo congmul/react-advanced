@@ -7,7 +7,7 @@ function Layout():JSX.Element {
         <div className="layout-basic">
             <Header />
             <main><Outlet /></main>
-            <Footer>© Footer</Footer>
+            <Footer>© 2022 - JEHYUN JUNG</Footer>
         </div>
 )}
 

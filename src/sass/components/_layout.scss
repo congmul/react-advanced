@@ -4,5 +4,6 @@
         overflow-y: auto;
         height: calc(100vh - ($header-height + $footer-height));
         background-color: $color-background-default;
+        padding: 1rem;
     }
 }
