@@ -1,0 +1,30 @@
+.layout-basic header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: $header-height;
+    border-bottom: 1px solid $color-border-light;
+    .logo {
+        margin: auto 0;
+    }
+    nav {
+        ul {
+            display: flex;
+            height: 100%;
+            a{
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0.6rem 1.2rem;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transition: all 0.3s ease-in-out;
+                        color: $color-text-primary;
+                        background-color: rgba($color-text-primary, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
