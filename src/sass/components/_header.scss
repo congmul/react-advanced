@@ -16,9 +16,12 @@
             display: flex;
             justify-content: center;
             height: 100%;
-            a{
+            a{ 
+                text-decoration: none;
+                color: $color-text-light;
                 &.active{
                     color: $color-text-primary;
+                    background-color: rgba($color-text-primary, 0.1);
                     svg{
                         fill: $color-text-primary;
                     }
@@ -43,6 +46,16 @@
         display: flex;
         justify-content: end;
         align-items: center;
+        .account-wrapper{
+            .dropdown button{
+                background-color: transparent;
+                box-shadow: none;
+                border: none;
+            }
+            .dropdown-toggle::after{
+                display: none;
+            }
+        }
     }
 }
 
